@@ -1,4 +1,4 @@
-# Scrapy settings for products project
+# Scrapy settings for books project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "products"
+BOT_NAME = "books"
 
-SPIDER_MODULES = ["products.spiders"]
-NEWSPIDER_MODULE = "products.spiders"
+SPIDER_MODULES = ["books.spiders"]
+NEWSPIDER_MODULE = "books.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "products (+http://www.yourdomain.com)"
+#USER_AGENT = "books (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "products.middlewares.ProductsSpiderMiddleware": 543,
+#    "books.middlewares.BooksSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "products.middlewares.ProductsDownloaderMiddleware": 543,
+#    "books.middlewares.BooksDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "products.pipelines.ProductsPipeline": 300,
+#    "books.pipelines.BooksPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
